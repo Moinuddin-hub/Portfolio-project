@@ -11,7 +11,15 @@ export const skillsData = [
           percentage: "50",
         },
         {
+          skillName: "Tailwind",
+          percentage: "50",
+        },
+        {
           skillName: "JAVASCRIPT",
+          percentage: "80",
+        },
+        {
+          skillName: "React",
           percentage: "80",
         },
       ],
@@ -20,15 +28,19 @@ export const skillsData = [
       label: "BACK END",
       data: [
         {
-          skillName: "JAVA",
+          skillName: "Express",
           percentage: "70",
         },
         {
-          skillName: "PYTHON",
+          skillName: "Node.Js",
           percentage: "65",
         },
         {
-          skillName: "KOTLIN",
+          skillName: "PHP",
+          percentage: "35",
+        },
+        {
+          skillName: "Java",
           percentage: "35",
         },
       ],
@@ -45,7 +57,7 @@ export const skillsData = [
           percentage: "65",
         },
         {
-          skillName: "ORACLE",
+          skillName: "MONGOOES",
           percentage: "85",
         },
       ],

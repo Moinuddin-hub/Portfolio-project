@@ -14,7 +14,7 @@ const portfolioData = [
     id: 2,
     name: "Ecommerce",
     image: ImageOne,
-    link: "",
+    link: "https://www.w3schools.com/",
   },
   {
     id: 3,
@@ -87,6 +87,7 @@ const Portfolio = () => {
         headerText="My Portfolio"
         icon={<BsInfoCircleFill size={40} />}
       />
+      
       <div className="portfolio__content">
         <ul className="portfolio__content__filter">
           {filterData.map((item) => (

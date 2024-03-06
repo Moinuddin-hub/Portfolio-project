@@ -11,5 +11,4 @@ const PageHeaderContent = (props) => {
   );
 };
 
-
 export default PageHeaderContent;

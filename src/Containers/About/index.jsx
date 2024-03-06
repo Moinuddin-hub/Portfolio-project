@@ -9,7 +9,7 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 const personalDetails = [
   {
     label: "Name",
-    value: "John Doe",
+    value: "Moin Uddin",
   },
   {
     label: "Age",
@@ -17,15 +17,15 @@ const personalDetails = [
   },
   {
     label: "Address",
-    value: "India",
+    value: "Khulna",
   },
   {
     label: "Email",
-    value: "demo@example.com",
+    value: "moincse022@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "01758724236",
   },
 ];
 
@@ -93,7 +93,7 @@ const About = () => {
             }}
           >
             <div className="about__content__servicesWrapper__innerContent">
-              <div>
+            <div>
                 <FaDev size={60} color="var( --yellow-theme-main-color)" />
               </div>
               <div>

@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import PageHeaderContent from "../../Components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import "./style.scss";
-
+import emailjs from '@emailjs/browser'
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_kdhvr09', 'template_54dpe5c', form.current, {
+        publicKey: 'eF4dvo3nRZsJ9smXd',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <section id="contact" className="contact">
       <PageHeaderContent
@@ -36,12 +54,13 @@ const Contact = () => {
             transform: "translateX(0px)",
           }}
         >
+          <form ref={form} onSubmit={sendEmail}>
           <div className="contact__content__form">
             <div className="contact__content__form__controlswrapper">
               <div>
                 <input
                   required
-                  name="name"
+                  name="from_name"
                   className="inputName"
                   type={"text"}
                 />
@@ -52,7 +71,7 @@ const Contact = () => {
               <div>
                 <input
                   required
-                  name="email"
+                  name="from_email"
                   className="inputEmail"
                   type={"text"}
                 />
@@ -63,7 +82,7 @@ const Contact = () => {
               <div>
                 <textarea
                   required
-                  name="description"
+                  name="message"
                   className="inputDescription"
                   type={"text"}
                   rows="5"
@@ -75,6 +94,7 @@ const Contact = () => {
             </div>
             <button>Submit</button>
           </div>
+          </form>
         </Animate>
       </div>
     </section>

@@ -1,14 +1,14 @@
 export const data = {
     experience: [
       {
-        title: "Consultant",
-        subTitle: "Miami, FL",
+        title: "Frontend Web Developer",
+        subTitle: "Abc Company",
         description:
           " User Experience, Visual Design",
       },
       {
-        title: "Senior Consultant",
-        subTitle: "London, UK",
+        title: "Frontend Web Developer",
+        subTitle: "CBE Company",
         description:
           "Web development, Databases, Backend developement",
       },
@@ -22,19 +22,19 @@ export const data = {
     education: [
       {
         title: "Secondary",
-        subTitle: "ABC School",
+        subTitle: "Charkulia High school",
         description:
-          "10th Grade",
+          "GPA:4.78 in Science",
       },
       {
         title: "Higher Secondary",
-        subTitle: "ABC School of higher education",
+        subTitle: "Khulna Public college",
         description:
-          "12th Grade in Science",
+          "GPA:4.50 in Science",
       },
       {
-        title: "B.Tech",
-        subTitle: "XYZ institute of technology",
+        title: "BSC",
+        subTitle: "Bangabandhu Sheikh Mujibur Rahman science and Technology University",
         description:
           "Bachelor of technology in computer science",
       },
